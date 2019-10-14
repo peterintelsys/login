@@ -1,0 +1,222 @@
+/* minimal css reset skall alltid vara med först i filen*/
+/* en stjärna betyder att all kod får denna kod i början sen kan man anpassa den se ex. h1 och h2.*/
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0;}
+
+/*img, video { max-width: 100%; height: auto;}*/
+
+/* button reset annars blir inte button och links samma storlek */
+button, input[type="submit"] {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body, h1, h2, h3, h4, h5, h6, ol, ul {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+/*End css reset*/
+
+html {
+  font-family:  'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #121212;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+input {
+  width:100%;
+  height:35px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+input:focus {
+  outline: none !important;
+  border:1px solid grey;
+}
+
+label {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0099cc;
+  color:white;
+}
+
+.navi a {
+  text-decoration: none;
+  color:white;
+}
+
+.btn{
+  display: block;
+  width:100%;
+  text-align: center;
+  height:35px;
+  font-size: 16px;
+  background-color: #0099cc;
+  color:white;
+}
+
+.accordion {
+  cursor:pointer;
+  transition: 0.4s;
+}
+
+/* List vertical and horisontel */
+
+.list-hori {
+  display: flex;
+  justify-content:space-around;
+  border: 1px solid black;
+}
+
+.list-verti {
+  border: 1px solid black;
+}
+
+.list-verti li{
+  text-align: left;
+  padding:8px 16px;
+  border-bottom: 1px solid black;
+}
+
+.list-verti li:last-child{
+  border-bottom: none;
+}
+
+.list-hori li {
+  text-align: center;
+  padding:8px 0;
+  /*border-right: 1px solid black;*/
+}
+
+.list-hori li:last-child {
+  /*border-right: none;*/
+}
+
+.list-hori li, .list-verti li{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.no-border {
+  border:none;
+}
+
+.list-small li {
+  font-size: 0.8rem;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+  z-index: 1;
+  border:1px solid black;
+  background-color: white;
+  display: none;
+}
+
+.dropdown-content li {
+  display: block;
+  width:100%;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-content li:last-child {
+  border-bottom: none;
+}
+
+
+.drop-btn {
+  width:100%;
+}
+
+.drop-btn:hover > ul .dropdown-content {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  background-color: #f0faeb; 
+}
+
+.panel {
+  display: none;
+}
+
+.green {
+  background-color: #daf5e1;
+}
